@@ -1,0 +1,15 @@
+%button {
+  margin: 0 20px;
+  padding: 6px 14px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $color-first;
+  color: $color-first;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  &:hover {
+    background: $bg-second;
+    color: $color-second;
+  }
+}

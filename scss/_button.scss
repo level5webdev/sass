@@ -1,0 +1,21 @@
+@mixin button-style($background, $color) {
+  background-color: $background;
+  color: $color;
+
+  &:hover {
+    background: darken($background, 50%);
+  }
+}
+
+.btn {
+  width: 200px;
+  padding: 10px 20px;
+  background-color: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+
+  &.btn-laraja {
+    @include button-style($color-orage, #000);
+  }
+}
